@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrom Board Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Carrom Board</h1>
+  <div class="game-container">
+    <canvas id="carromBoard" width="600" height="600"></canvas>
+    <div class="controls">
+      <button id="resetBtn">Reset Game</button>
+      <button id="modeBtn">Switch Mode: <span id="modeText">Two Player</span></button>
+      <div id="scoreDisplay">
+        <p><strong>Player 1:</strong> <span id="score1">0</span></p>
+        <p><strong>Player 2 / CPU:</strong> <span id="score2">0</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sound effects -->
+  <audio id="hitSound" src="assets/hit.mp3" preload="auto"></audio>
+  <audio id="pocketSound" src="assets/pocket.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
